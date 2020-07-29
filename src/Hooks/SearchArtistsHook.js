@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { getArtistsList } from '../Services/getArtistsList';
 
-export const useSearchArtistsHook = () => {
+export const useSearchArtistsHook = (search) => {
   const [artists, setArtists] = useState([]);
   const [offset, setOffSet] = useState(0);
   const [count, setCount] = useState();
@@ -11,18 +11,21 @@ export const useSearchArtistsHook = () => {
     if(target.name === 'next') setOffSet(offset => offset + 20);
   };
 
-  useEffect(() => {
-    getArtistsList(offset)
+  const handleSubmit = event => {
+    event.preventDefault();
+
+    getArtistsList(search, offset)
       .then(({ count, offset, artists }) => {
         setArtists(artists);
         setCount(count);
         setOffSet(offset);
       });
-  }, [offset]);
+  };
 
   return {
     artists,
     count,
-    handleClick
+    handleClick,
+    handleSubmit
   };
 };
