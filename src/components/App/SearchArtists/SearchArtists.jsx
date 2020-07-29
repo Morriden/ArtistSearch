@@ -6,7 +6,7 @@ const SearchArtists = ({ artists }) => {
     <li key={artist.id}>
       <div>
         {artist.name}
-      </div>  
+      </div>
     </li>
   ));
 
