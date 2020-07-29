@@ -6,7 +6,7 @@ const ArtistView = ({ releases }) => {
     <li key={release.id}>
       <div>
         {release.title}, {release.date}
-        <img src={`http://coverartarchive.org/release/${release.id}/front`}/>
+        <img src={`http://coverartarchive.org/release/${release.id}/front`} alt='Image Not Found'/>
       </div>
     </li>
   ));

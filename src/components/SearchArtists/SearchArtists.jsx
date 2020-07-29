@@ -1,13 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const SearchArtists = ({ artists, handleSubmit, handleChange }) => {
   const artistsElements = artists.map(artist => (
+   
     <li key={artist.id}>
-      <div>
-        {artist.name}
-      </div>
+      <Link to={`/${artist.id}`}>
+        <div>
+          {artist.name}
+        </div>
+      </Link>
     </li>
+
   ));
 
   return (
