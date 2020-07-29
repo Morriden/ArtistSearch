@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSearchArtistsHook } from '../Hooks/SearchArtistsHook';
-import SearchArtists from '../components/App/SearchArtists/SearchArtists';
+import SearchArtists from '../components/SearchArtists/SearchArtists';
 import { useSearchBar } from '../Hooks/SearchBarHook';
 
 const SearchArtistsContainer = () => {

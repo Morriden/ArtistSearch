@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Artists snap shot tests should be a list of artists 1`] = `
+<Fragment>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      type="text"
+    />
+  </form>
+  <ul>
+    <li
+      key="1"
+    >
+      <div>
+        artist 1
+      </div>
+    </li>
+    <li
+      key="2"
+    >
+      <div>
+        artist 2
+      </div>
+    </li>
+    <li
+      key="3"
+    >
+      <div>
+        artist 3
+      </div>
+    </li>
+  </ul>
+</Fragment>
+`;
