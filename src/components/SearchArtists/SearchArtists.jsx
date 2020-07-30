@@ -6,7 +6,7 @@ const SearchArtists = ({ artists, handleSubmit, handleChange }) => {
   const artistsElements = artists.map(artist => (
    
     <li key={artist.id}>
-      <Link to={`/${artist.id}`}>
+      <Link to={`/${artist.name}/${artist.id}`}>
         <div>
           {artist.name}
         </div>

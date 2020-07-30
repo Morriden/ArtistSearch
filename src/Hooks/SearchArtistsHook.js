@@ -3,7 +3,7 @@ import { getArtistsList } from '../Services/getArtistsList';
 
 export const useSearchArtistsHook = (search, offset) => {
   const [artists, setArtists] = useState([]);
-  const [count, setCount] = useState();
+  const [count, setCount] = useState(0);
   
   const handleSubmit = event => {
     event.preventDefault();

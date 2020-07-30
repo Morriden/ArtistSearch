@@ -1,24 +1,24 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import ArtistView from '../components/ArtistView/ArtistView';
 import Pagination from '../components/Pagination/Pagination';
-import { useArtistReleaseHook } from '../Hooks/ArtistViewHook';
+import { useAlbumReleaseHook } from '../Hooks/AlbumViewHook';
 import { usePagination } from '../Hooks/PaginationHook';
+import AlbumView from '../components/AlbumView/AlbumView';
 
-const ArtistViewContainer = () => {
+const AlbumViewContainer = () => {
   
-  const { id } = useParams();
+  const { bandName, id } = useParams();
 
   const { offset, handleClick } = usePagination();
   
-  const { releases, releaseCount } = useArtistReleaseHook(id, offset);
+  const { releases, releaseCount } = useAlbumReleaseHook(id, offset);
 
   return (
     <section>
       <Pagination offset={offset} handleClick={handleClick} count={releaseCount} />
-      <ArtistView releases={releases}/>
+      <AlbumView releases={releases} bandName={bandName}/>
     </section>
   );
 };
 
-export default ArtistViewContainer;
+export default AlbumViewContainer;

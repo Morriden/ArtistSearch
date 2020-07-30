@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Displays Releases for and Artist Should be the releases from an Artist 1`] = `
+<section>
+  <li
+    key="ID1"
+  >
+    <Link
+      to="/album/im a name/ID1"
+    >
+      <div>
+        title1
+        , 
+        somedate
+        <img
+          alt="Image Not Found"
+          src="http://coverartarchive.org/release/ID1/front"
+        />
+      </div>
+    </Link>
+  </li>
+  <li
+    key="ID2"
+  >
+    <Link
+      to="/album/im a name/ID2"
+    >
+      <div>
+        title2
+        , 
+        somedate
+        <img
+          alt="Image Not Found"
+          src="http://coverartarchive.org/release/ID2/front"
+        />
+      </div>
+    </Link>
+  </li>
+  <li
+    key="ID3"
+  >
+    <Link
+      to="/album/im a name/ID3"
+    >
+      <div>
+        title3
+        , 
+        somedate
+        <img
+          alt="Image Not Found"
+          src="http://coverartarchive.org/release/ID3/front"
+        />
+      </div>
+    </Link>
+  </li>
+</section>
+`;

@@ -1,3 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component renders App 1`] = `<SearchArtistsContainer />`;
+exports[`App component renders App 1`] = `
+<BrowserRouter>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/:bandName/:id"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/album/:bandName/:id"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/lyrics/:bandName/:songName"
+    />
+  </Switch>
+</BrowserRouter>
+`;

@@ -14,23 +14,35 @@ exports[`Search Artists snap shot tests should be a list of artists 1`] = `
     <li
       key="1"
     >
-      <div>
-        artist 1
-      </div>
+      <Link
+        to="/artist 1/1"
+      >
+        <div>
+          artist 1
+        </div>
+      </Link>
     </li>
     <li
       key="2"
     >
-      <div>
-        artist 2
-      </div>
+      <Link
+        to="/artist 2/2"
+      >
+        <div>
+          artist 2
+        </div>
+      </Link>
     </li>
     <li
       key="3"
     >
-      <div>
-        artist 3
-      </div>
+      <Link
+        to="/artist 3/3"
+      >
+        <div>
+          artist 3
+        </div>
+      </Link>
     </li>
   </ul>
 </Fragment>

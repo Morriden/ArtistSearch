@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ArtistView from './ArtistView';
+import AlbumView from './AlbumView';
 
 describe('Displays Releases for and Artist', () => {
   it('Should be the releases from an Artist', () => {
-    const wrapper = shallow(<ArtistView releases={[{
+    const wrapper = shallow(<AlbumView bandName={'im a name'} releases={[{
       title: 'title1', date: 'somedate', id: 'ID1'
     },
     {

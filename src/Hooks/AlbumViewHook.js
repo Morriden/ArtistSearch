@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getArtistReleases } from '../Services/getArtistReleases';
 
-export const useArtistReleaseHook = (releasesId, offset) => {
+export const useAlbumReleaseHook = (releasesId, offset) => {
   const [releases, setReleases] = useState([]);
   const [releaseCount, setReleaseCount] = useState(0);
 

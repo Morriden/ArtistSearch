@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Get Lyrics for a song should get the lyrics for a song 1`] = `
+<div>
+  check my out im some lyricss
+</div>
+`;

@@ -5,13 +5,13 @@ import RecordingsView from '../components/RecordingsView/RecordingsView';
 
 const RecordingsViewContainer = () => {
 
-  const { id } = useParams();
+  const { bandName, id } = useParams();
 
   const { recordings } = useRecordingsHook(id);
 
   return (
     <section>
-      <RecordingsView recordings={recordings}/>
+      <RecordingsView recordings={recordings} bandName={bandName}/>
     </section>
   );
 };

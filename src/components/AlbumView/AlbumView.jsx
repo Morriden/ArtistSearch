@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const ArtistView = ({ releases }) => {
+const AlbumView = ({ releases, bandName }) => {
   const artistReleases = releases.map(release => (
     <li key={release.id}>
-      <Link to={`/album/${release.id}`}>
+      <Link to={`/album/${bandName}/${release.id}`}>
         <div>
           {release.title}, {release.date}
           <img src={`http://coverartarchive.org/release/${release.id}/front`} alt='Image Not Found'/>
@@ -21,8 +21,9 @@ const ArtistView = ({ releases }) => {
   );
 };
 
-ArtistView.propTypes = {
-  releases: PropTypes.arrayOf(PropTypes.object).isRequired
+AlbumView.propTypes = {
+  releases: PropTypes.arrayOf(PropTypes.object).isRequired,
+  bandName: PropTypes.string.isRequired
 };
 
-export default ArtistView;
+export default AlbumView;
