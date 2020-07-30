@@ -17,7 +17,9 @@ const AlbumViewContainer = () => {
     <section>
       <Pagination offset={offset} handleClick={handleClick} count={releaseCount} />
       <AlbumView releases={releases} bandName={bandName}/>
+      <Pagination offset={offset} handleClick={handleClick} count={releaseCount} />
     </section>
+    
   );
 };
 
