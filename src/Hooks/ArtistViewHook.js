@@ -3,13 +3,18 @@ import { getArtistReleases } from '../Services/getArtistReleases';
 
 export const useArtistReleaseHook = (releasesId, offset) => {
   const [releases, setReleases] = useState([]);
-  
+  const [releaseCount, setReleaseCount] = useState(0);
+
   useEffect(() => {
     getArtistReleases(releasesId, offset)
-      .then(({ releases }) => setReleases(releases));
+      .then(({ releases, 'release-count': count }) => {
+        setReleases(releases);
+        setReleaseCount(count);
+      });
   }, [offset]);
 
   return {
-    releases
+    releases,
+    releaseCount
   };
 };

@@ -11,11 +11,13 @@ const SearchArtistsContainer = () => {
 
   const { offset, handleClick } = usePagination();
 
-  const { artists, handleSubmit } = useSearchArtistsHook(search, offset);
+  const { artists, handleSubmit, count } = useSearchArtistsHook(search, offset);
+
+
 
   return (
     <>
-      <Pagination offset={offset} handleClick={handleClick} />
+      <Pagination offset={offset} handleClick={handleClick} count={count} />
       <SearchArtists 
         artists={artists}
         handleSubmit={handleSubmit}

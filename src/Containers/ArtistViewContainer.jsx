@@ -11,11 +11,11 @@ const ArtistViewContainer = () => {
 
   const { offset, handleClick } = usePagination();
   
-  const { releases } = useArtistReleaseHook(id, offset);
+  const { releases, releaseCount } = useArtistReleaseHook(id, offset);
 
   return (
     <section>
-      <Pagination offset={offset} handleClick={handleClick} />
+      <Pagination offset={offset} handleClick={handleClick} count={releaseCount} />
       <ArtistView releases={releases}/>
     </section>
   );
