@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Displays Releases for and Artist Should be the releases from an Artist 1`] = `
+<section>
+  <li
+    key="ID1"
+  >
+    <Link
+      to="/album/im a name/ID1"
+    >
+      <div>
+        title1
+        , 
+        somedate
+        <ReactImageFallback
+          fallbackImage="https://dalelyles.com/musicmp3s/no_cover.jpg"
+          initialImage={null}
+          src="http://coverartarchive.org/release/ID1/front"
+          style={
+            Object {
+              "height": "300px",
+              "width": "300px",
+            }
+          }
+        />
+      </div>
+    </Link>
+  </li>
+  <li
+    key="ID2"
+  >
+    <Link
+      to="/album/im a name/ID2"
+    >
+      <div>
+        title2
+        , 
+        somedate
+        <ReactImageFallback
+          fallbackImage="https://dalelyles.com/musicmp3s/no_cover.jpg"
+          initialImage={null}
+          src="http://coverartarchive.org/release/ID2/front"
+          style={
+            Object {
+              "height": "300px",
+              "width": "300px",
+            }
+          }
+        />
+      </div>
+    </Link>
+  </li>
+  <li
+    key="ID3"
+  >
+    <Link
+      to="/album/im a name/ID3"
+    >
+      <div>
+        title3
+        , 
+        somedate
+        <ReactImageFallback
+          fallbackImage="https://dalelyles.com/musicmp3s/no_cover.jpg"
+          initialImage={null}
+          src="http://coverartarchive.org/release/ID3/front"
+          style={
+            Object {
+              "height": "300px",
+              "width": "300px",
+            }
+          }
+        />
+      </div>
+    </Link>
+  </li>
+</section>
+`;

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Artists snap shot tests should be a list of artists 1`] = `
+<ul>
+  <li
+    key="ID1"
+  >
+    <Link
+      to="/lyrics/im a band name/title1"
+    >
+      <div>
+        title1
+      </div>
+    </Link>
+  </li>
+  <li
+    key="ID2"
+  >
+    <Link
+      to="/lyrics/im a band name/title2"
+    >
+      <div>
+        title2
+      </div>
+    </Link>
+  </li>
+  <li
+    key="ID3"
+  >
+    <Link
+      to="/lyrics/im a band name/title3"
+    >
+      <div>
+        title3
+      </div>
+    </Link>
+  </li>
+</ul>
+`;
