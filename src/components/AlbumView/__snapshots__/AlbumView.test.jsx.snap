@@ -12,9 +12,16 @@ exports[`Displays Releases for and Artist Should be the releases from an Artist 
         title1
         , 
         somedate
-        <img
-          alt="Image Not Found"
+        <ReactImageFallback
+          fallbackImage="https://dalelyles.com/musicmp3s/no_cover.jpg"
+          initialImage={null}
           src="http://coverartarchive.org/release/ID1/front"
+          style={
+            Object {
+              "height": "300px",
+              "width": "300px",
+            }
+          }
         />
       </div>
     </Link>
@@ -29,9 +36,16 @@ exports[`Displays Releases for and Artist Should be the releases from an Artist 
         title2
         , 
         somedate
-        <img
-          alt="Image Not Found"
+        <ReactImageFallback
+          fallbackImage="https://dalelyles.com/musicmp3s/no_cover.jpg"
+          initialImage={null}
           src="http://coverartarchive.org/release/ID2/front"
+          style={
+            Object {
+              "height": "300px",
+              "width": "300px",
+            }
+          }
         />
       </div>
     </Link>
@@ -46,9 +60,16 @@ exports[`Displays Releases for and Artist Should be the releases from an Artist 
         title3
         , 
         somedate
-        <img
-          alt="Image Not Found"
+        <ReactImageFallback
+          fallbackImage="https://dalelyles.com/musicmp3s/no_cover.jpg"
+          initialImage={null}
           src="http://coverartarchive.org/release/ID3/front"
+          style={
+            Object {
+              "height": "300px",
+              "width": "300px",
+            }
+          }
         />
       </div>
     </Link>
